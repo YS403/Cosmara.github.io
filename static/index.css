@@ -1,0 +1,120 @@
+#main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    #hero-section{
+        height: 80vh;
+        width: 50%;
+        border-radius: 9px;
+        padding: 20px 30px;
+    }
+    #mortgage-section{
+        background: #FFF9C1;
+        background: #9fd3c7;
+        height: 55vh;
+        width: 36%;
+        border-radius: 9px;
+        padding: 30px 50px !important;
+    
+    }
+    h1 ,h3,p,a{
+        text-align: center;
+    }
+    #hero-section h1{
+        font-size: 60px;
+        color: white;
+
+    }
+
+    #hero-section h2{
+        font-size: 35px;
+        margin: 10px;
+        color: white;
+
+    }
+    #hero-section h3{
+        font-size: 25px;
+        margin: 10px;
+        color: white;
+
+    }
+    #hero-section p{
+        color: white;
+        font-size: 20px;
+        line-height: 1.6; 
+        margin-top: 15px; 
+        margin-bottom: 20px; 
+        text-align: justify; 
+        max-width: 800px; 
+    }
+
+    #hero-section ul {
+    list-style-type: disc !important; 
+        
+    }
+    #hero-section ul li{
+        color: white;
+        font-size: 21px;
+        padding-left: 60px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        
+    }
+    #hero-section a{
+        color: white;
+        font-size: 20px;
+        background: #ff4545;
+        padding: 12px 20px;
+        text-decoration: none;
+        display: inline-block;     
+        border-radius: 6px;  
+        margin-left: 45px;
+        font-weight: 600;
+
+    }
+    #hero-section a:hover{
+        background: #ff3535;
+    }
+
+#mortgage-section h1{
+    font-size: 45px;
+    font-weight: 700;
+
+}
+.mortgage-content h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px;
+
+}
+
+.mortgage-content p{
+    font-size: 21px;
+    line-height: 1.5; 
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+}
+.mortgage-content {
+    text-align: center; 
+}
+.mortgage-content a{
+    color: white;
+    font-size: 23px;
+    background: #E52B50;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block;     
+    border-radius: 45px;  
+    text-align: center;
+    margin: 40px auto;
+    font-weight: 600;
+}
+.mortgage-content a:hover{
+    background: #ff1f4c;
+
+}
+.services-list ul li{
+    list-style: none;
+}

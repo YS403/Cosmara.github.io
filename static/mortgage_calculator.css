@@ -1,0 +1,84 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.mortgage-info{
+    padding: 25px 70px;
+    background-color: #9fd3c7;
+    width: 30%;
+    height: 80vh;
+    border-radius: 0 7px 7px 0;
+
+}
+#payment-result{
+    display: none;
+}
+#denial-message{
+    display: none;
+}
+.calculator-container{
+    background: #FCFCFC;
+    width: 40%;
+    height: 80vh;
+    border-radius: 7px 0 0 7px;
+    padding: 25px 70px;
+
+}
+
+.calculator{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+}
+.calculator-inputs{
+    width: 90%;
+    height: 8vh;
+    margin-top: 18px;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    background-color: #D9D9D9;
+    color: #606060;
+}
+#calculate-btn{
+    background-color: #8B7EFF;
+    color: #000000;
+    margin-top: 50px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+}
+
+#calculate-btn:hover{
+    background-color: #7a6bfa;
+
+}
+
+main.h1, main.h2, main.h3 {
+    text-align: center;
+    margin: 10px auto;
+}
+main.h1{
+    font-size: 40px;
+}
+main.h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+main.h3{
+    font-size: 25px;
+}
+.mortgage-info p{
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 1.2; 
+    text-align: justify; 
+}
