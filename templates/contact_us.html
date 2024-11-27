@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/contact_us.css">
+    <title>Contact Us</title>
+    <script type="text/javascript">
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(error => console.error('Failed to load navbar:', error));
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="header">
+        <h1>Contact Us</h1>
+        <h3>We're here to help. Get in touch today!</h3>
+    </div>
+        
+    <main>
+        
+        <form >
+        <div class="contact-form">
+            
+            <div>
+                <input type="text" placeholder="First Name" required name="first_name">
+                <input type="text" placeholder="Last Name" required name="last_name">
+            </div>
+                
+                <input type="email" placeholder="Email Address" id="email-input" required name="email_address">
+                <input type="text" placeholder="Subject" id="subject-input" required name="subject">
+                <textarea placeholder="Message" required name ="message" ></textarea>
+                <input type="submit" value="Submit Inquire" id="submit_btn">
+            
+        </div>
+    </form>
+    </main>
+ 
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/services.css">
+    <script type="text/javascript">
+
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(error => console.error('Failed to load navbar:', error));
+    </script>
+    <title>Services</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <header class="header">
+        <h1>Our Services</h1>
+    </header>
+    <main>
+        <div class="service-section"  style="--order: 1;">
+            <div class="service-content">
+                <h1>Savings Accounts </h1>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor
+                    totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas?
+                </p>
+                <p> doloribus quis tempore quaerat unde.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt
+                    eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis
+                    tempore quaerat unde.</p>
+            </div>
+        </div>
+
+        <div class="service-section" style="--order: 2;">
+            <div class="service-content">
+                <h1>Home Loans and Mortgages
+                </h1>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor
+                    totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem
+                    doloribus quis tempore quaerat unde.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt
+                    eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis
+                    tempore quaerat unde.</p>
+            </div>
+        </div>
+        <div class="service-section">
+            <div class="service-content" style="--order: 3;">
+                <h1>Online and Mobile Banking
+                </h1>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor
+                    totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem
+                    doloribus quis tempore quaerat unde.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt
+                    eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis
+                    tempore quaerat unde.</p>
+            </div>
+        </div>
+        <div class="service-section">
+            <div class="service-content" style="--order: 4;">
+                <h1>Mortgages</h1>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor
+                    totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem
+                    doloribus quis tempore quaerat unde.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt
+                    eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis
+                    tempore quaerat unde.</p>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <div class="service-content" style="--order: 5;">
+                <h1>Foreign Currency Exchange</h1>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor
+                    totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem
+                    doloribus quis tempore quaerat unde.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt
+                    eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis
+                    tempore quaerat unde.</p>
+            </div>
+        </div>
+        <div class="service-section">
+            <div class="service-content" style="--order: 6;">
+                <h1>Investment Services </h1>
+                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor
+                    totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem
+                    doloribus quis tempore quaerat unde.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt
+                    eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis
+                    tempore quaerat unde.</p>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

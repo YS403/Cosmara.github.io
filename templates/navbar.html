@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/navbar.css">
+    <style>
+        .navbar {
+            margin: 35px auto;
+            background-color: #f95959;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 0 20px;
+            width: 80%;
+            height: 55px;
+            border-radius: 3px;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .nav-item a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 440;
+            padding: 6px 20px;
+            border-radius: 4px;
+            background-color: transparent;
+        }
+       
+        .nav-item a:hover {
+            background-color: #da3939; 
+        }
+
+        .search-input {
+            border: none;
+            border-radius: 3px;
+            outline: none;
+            height: 3vh;
+            padding: 16px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h3 class="navbar-brand">COSMARA</h3>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/templates/index.html">Home</a></li>
+            <li class="nav-item"><a href="/templates/mortgage_caclulator.html">Mortgage Calculator</a></li>
+            <li class="nav-item"><a href="/templates/about_us.html">About Us</a></li>
+            <li class="nav-item"><a href="/templates/contact_us.html">Contact Us</a></li>
+            <li class="nav-item"><a href="/templates/services.html">Services</a></li>
+            <li class="nav-item"><a href="/templates/faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

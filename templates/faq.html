@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/faq.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script type="text/javascript">
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(error => console.error('Failed to load navbar:', error));
+    </script>
+    <title>FAQ</title>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <header class="header">
+        <h1>FAQ</h1>
+    </header>
+    <main>
+
+        <div class="faq">
+            <div class="faq-header">
+                <h3>What services does your bank offer?</h3>
+            </div>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam enim, odit necessitatibus, excepturi
+                    voluptates saepe deleniti temporibus, ab ipsum iusto mollitia quibusdam debitis dolorum quaerat.
+                    Maxime sint numquam fugit ipsum?</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header">
+                <h3>How can I check my mortgage eligibility?</h3>
+            </div>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, aperiam dolor corporis deleniti,
+                    saepe eum earum neque aspernatur est totam iste enim. Quo, molestias corrupti blanditiis dolore
+                    nihil ea iusto.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header">
+                <h3>What documents are required to open an account?</h3>
+            </div>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia id possimus necessitatibus
+                    consequuntur qui itaque tempore officiis culpa exercitationem eligendi, eos, accusantium doloremque
+                    natus reiciendis, cumque ratione facere. Doloremque, a?</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header">
+                <h3>How secure are my online transactions with the bank?</h3>
+            </div>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, in. Magnam quod in modi
+                    provident veniam aliquam nam. Repellendus inventore ipsum iure blanditiis sequi aliquid sint quod
+                    perferendis voluptatum reprehenderit!</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-header">
+                <h3>Can I apply for a loan online?</h3>
+            </div>
+            <div class="faq-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit neque deserunt minus, dolores
+                    veniam facilis, perferendis beatae numquam natus consectetur iusto nihil placeat. Exercitationem
+                    excepturi veritatis ad fuga dolorum illo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa necessitatibus voluptatum consequatur numquam praesentium? Temporibus obcaecati quisquam
+                    accusamus expedita est autem vel, sed aliquam voluptatum, minima saepe excepturi, libero sapiente.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelectorAll('.faq-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const faq = header.parentElement;
+                faq.classList.toggle('open');
+
+                const content = faq.querySelector('.faq-content');
+                if (faq.classList.contains('open')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = '0';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

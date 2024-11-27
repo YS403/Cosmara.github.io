@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mortgage_calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript">
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(error => console.error('Failed to load navbar:', error));
+    </script>
+    <title>Mortgage Caclulator</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <div class="calculator-container">
+            <h1>Mortgage Calculator</h1>
+            <h2>Find Your Monthly Mortgage Payment in Seconds</h2>
+            <div class="calculator">
+                <h3>Fixed interest 4.5%</h3>
+                <input type="text" placeholder="Loan Amount" class="calculator-inputs" required id="loan_amount">
+                <input type="text" placeholder="Loan Term (In Years)" class="calculator-inputs" required id="loan_term">
+                <input type="text" placeholder="Monthly Income" class="calculator-inputs" required id="monthly_income">
+                <input type="submit" value="Calculate" class="calculator-inputs" id="calculate-btn">
+            </div>
+        </div>
+        <div class="mortgage-info">
+            <div id="bank-info">
+                <h1>Cosmara Bank Mortgages</h1>
+                <p>At Cosmara Bank, we are committed to making your dream of owning a home a reality. Our mortgage
+                    solutions are designed to be flexible, affordable, and tailored to your needs.</p>
+                <p>Cosmara Bank values transparency and customer satisfaction. We ensure that there are no hidden fees,
+                    and all terms are clearly explained to you upfront.</p>
+
+                <p>Want to learn more about our services? Visit our <a href="services.html">Services</a> page to explore
+                    all we offer.
+                    Still have questions? Head over to our <a href="faq.html">FAQ</a> page for more details.</p>
+            </div>
+
+            <div id="payment-result">
+                <h3>Your estimated monthly payment is</h3>
+                <h1>£<span id="monthly_payment">100.00</span></h1>
+                <p>Based on the provided
+                    loan details, this is the
+                    approximate amount you'll
+                    pay each month for
+                    your mortgage.</p>
+                <a href="mortgage_caclulator.html">Reset Calculator</a>
+            </div>
+            <div id="denial-message">
+                <h4>Loan denied: Monthly payment exceeds 30% of your income.</h4>
+                <a href="mortgage_caclulator.html">Reset Calculator</a>
+
+            </div>
+
+        </div>
+
+    </main>
+    <script src="/static/mortgage_calculator.js"></script>
+
+</html>

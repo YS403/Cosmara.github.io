@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/about_us.css">
+    <script type="text/javascript">
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(error => console.error('Failed to load navbar:', error));
+    </script>
+    <title>About Us</title>
+</head>
+<body>
+    <div id="navbar"></div>
+    <header class="header">
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <div class="content-section">
+            <img src="/static/img2.jpg" alt="" class="section-image">
+            <!-- source: https://media.istockphoto.com/id/1409309926/photo/trust-word-on-content-section-jigsaw-puzzle.jpg?s=612x612&w=0&k=20&c=tY31LoleNPuwv05xDWdNITtQjCowSK0PlnLNEi6RpSU= -->
+            <div class="content">
+                <h1>Who We Are</h1>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.</p>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="content">
+                <h1>Our Mortgage Solutions</h1>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.</p>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.</p>
+            </div>
+            <img src="/static/img1.jpg" alt="" class="section-image">
+            <!-- source : https://www.bankrate.com/2018/07/05141000/mortgage-broker-benefits-everything-you-need-to-know.jpg?auto=webp&optimize=high&crop=16:9 -->
+            
+        </div>
+        <div class="content-section">
+            <!-- source:https://media.istockphoto.com/id/513439341/photo/portrait-of-enthusiastic-business-people-in-circle.jpg?s=612x612&w=0&k=20&c=oxwsq8WGFT0ixmSojntYBEZqifne4P7DlqOWbXCqWUk= -->
+            <img src="/static/img3.jpg" alt="" iclass="section-image">
+            <div class="content">
+                <h1>Empowering Your Homeownership Journey</h1>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.</p>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates consectetur dolor totam, sunt eveniet ea nihil illum laboriosam quidem, temporibus accusamus ad qui voluptas? Autem doloribus quis tempore quaerat unde.</p>
+            </div>
+        </div>
+
+    
+
+    </main>
+
+</body>
+</html>

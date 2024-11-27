@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/index.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript">
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(error => console.error('Failed to load navbar:', error));
+    </script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main id="main">
+        <div id="hero-section">
+            <h1>Welcome to COSMARA</h1>
+            <h3>Trust, Security, Excellence</h3>
+            <p>At Cosmara , we believe in making banking simple, secure, and
+                accessible for everyone. Whether you're planning for your future,
+                buying a home, or managing everyday expenses, we are here to
+                support your financial goals.</p>
+
+            <div class="services-list">
+                <h2>Our Services include:</h2>
+                <ul>
+                    <li>Savings Accounts</li>
+                    <li>Home Loans and Mortgages</li>
+                    <li>Online and Mobile Banking</li>
+                    <li>Foreign Currency Exchange</li>
+                    <li>Overdraft Protection</li>
+                </ul>
+                <a href="services.html">Find Out More</a>
+            </div>
+        </div>
+        <div id="mortgage-section">
+            <h1>Mortgage Calculator</h1>
+            <div class="mortgage-content">
+                <h3>Ready to own your dream home?</h3>
+                <p>Use our easy mortgage calculator to find out how much you can afford and start planning your
+                    financial future today!</p>
+                <a href="mortgage_caclulator.html">Unlock Your Mortgage</a>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
